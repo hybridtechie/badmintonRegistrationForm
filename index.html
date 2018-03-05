@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Brisbane 7s Badminton Registration </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/smart-forms.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!--[if lte IE 9]>
+    	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>    
+        <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">   <![endif]-->    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="woodbg">
+
+    <div class="smart-wrap">
+        <div class="smart-forms smart-container wrap-2">
+
+            <div class="form-header header-primary">
+                <h4><i class="fa fa-check"></i>Badminton Registration Form</h4>
+            </div>
+            <!-- end .form-header section -->
+
+
+            <form method="post" action="javascript:completeAndRedirect();" id="form-ui">
+                <div class="form-body">
+
+                    <div class="spacer-b30">
+                        <div class="tagline"><span>Introduce Yourself </span>
+                        </div>
+                        <!-- .tagline -->
+                    </div>
+
+                    <div class="frm-row">
+
+                        <div class="colm colm12">
+
+
+                            <div class="section">
+                                <label class="field prepend-icon">
+                                    <input type="text" name="name" id="name" required class="gui-input" placeholder="Enter your full name">
+                                    <span class="field-icon"><i class="fa fa-user"></i></span>
+                                </label>
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <label class="field prepend-icon">
+                                    <input type="email" name="email" id="email" required class="gui-input" placeholder="Enter Email">
+                                    <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                                </label>
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <label class="field prepend-icon">
+                                    <input type="tel" name="mobile" id="mobile" required class="gui-input" placeholder="Telephone input">
+                                    <span class="field-icon"><i class="fa fa-phone-square"></i></span>
+                                </label>
+                            </div>
+                            <!-- end section -->
+
+                        </div>
+                        <!-- end .colm6 section -->
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="spacer-b30">
+                        <div class="tagline"><span>Choose Events </span>
+                        </div>
+                        <!-- .tagline -->
+                    </div>
+                    <div class="frm-row">
+
+
+                        <div class="section colm colm12">
+
+                            <div class="option-group field" id="events">
+
+                                <label class="option block">
+                                    <input type="checkbox" name="g1doubles" id="cb_g1doubles" value="G1">
+                                    <span class="checkbox"></span> G1 Mens Doubles - 60$
+                                </label>
+
+                                <label class="option block">
+                                    <input type="checkbox" name="g2doubles" id="cb_g2doubles" value="G2">
+                                    <span class="checkbox"></span> G2 Mens Doubles - 60$
+                                </label>
+
+                                <label class="option block">
+                                    <input type="checkbox" name="singles" id="cb_singles" value="S1">
+                                    <span class="checkbox"></span> Mens Singles - 30$
+                                </label>
+                                <label class="option block">
+                                    <input type="checkbox" name="under12kids" id="cb_under12kids" value="K1">
+                                    <span class="checkbox"></span> Under 12 Kids Singles - 10$
+                                </label>
+
+                                <label class="option block">
+                                    <input type="checkbox" name="under16kids" id="cb_under16kids" value="K2">
+                                    <span class="checkbox"></span> Under 16 Kids Singles - 20$
+                                </label>
+
+                            </div>
+                            <!-- end .option-group section -->
+
+                        </div>
+                        <!-- end .colm section -->
+
+
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="spacer-b30 showAfterParticipantSelection">
+                        <div class="tagline"><span>Enter Participant Details </span>
+                        </div>
+                        <!-- .tagline -->
+                    </div>
+
+                    <div class="frm-row" id="g1doublesRow">
+
+                        <div class="colm colm12">
+
+                            <div class="spacer-b30">
+                                <div class="tagline"><span>G1 Doubles </span>
+                                </div>
+                                <!-- .tagline -->
+                            </div>
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="firstPlayer" id="g1_firstPlayer" class="gui-input" placeholder="Enter Player 1 Full Name">
+                                    </label>
+                                    <label for="firstPlayer" class="button"> 1st Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="secondPlayer" id="g1_secondPlayer" class="gui-input" placeholder="Enter Player 2 Full Name">
+                                    </label>
+                                    <label for="secondPlayer" class="button"> 2nd Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+
+                        </div>
+                        <!-- end .colm6 section -->
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="frm-row" id="g2doublesRow">
+
+                        <div class="colm colm12">
+
+                            <div class="spacer-b30">
+                                <div class="tagline"><span>G2 Doubles </span>
+                                </div>
+                                <!-- .tagline -->
+                            </div>
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="firstPlayer" class="gui-input" placeholder="Enter Player 1 Full Name">
+                                    </label>
+                                    <label for="firstPlayer" class="button"> 1st Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="secondPlayer" class="gui-input" placeholder="Enter Player 1 Full Name">
+                                    </label>
+                                    <label for="secondPlayer" class="button"> 2nd Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+
+                        </div>
+                        <!-- end .colm6 section -->
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="frm-row" id="singlesRow">
+
+                        <div class="colm colm12">
+
+                            <div class="spacer-b30">
+                                <div class="tagline"><span>Mens Singles</span>
+                                </div>
+                                <!-- .tagline -->
+                            </div>
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="firstPlayer" id="singles_firstPlayer" class="gui-input" placeholder="Enter Player Full Name">
+                                    </label>
+                                    <label for="firstPlayer" class="button"> Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="secondPlayer" class="gui-input" placeholder="(Optional)Enter Player Full Name">
+                                    </label>
+                                    <label for="secondPlayer" class="button"> Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                        </div>
+                        <!-- end .colm6 section -->
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="frm-row" id="under12kidsRow">
+
+                        <div class="colm colm12">
+
+                            <div class="spacer-b30">
+                                <div class="tagline"><span>Under 12 Kids Singles</span>
+                                </div>
+                                <!-- .tagline -->
+                            </div>
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="firstPlayer" id="u12_firstPlayer" class="gui-input" placeholder="Enter Player Full Name">
+                                    </label>
+                                    <label for="firstPlayer" class="button"> Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="secondPlayer" class="gui-input" placeholder="(Optional)Enter Player Full Name">
+                                    </label>
+                                    <label for="secondPlayer" class="button"> Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+
+                        </div>
+                        <!-- end .colm6 section -->
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="frm-row" id="under16kidsRow">
+
+                        <div class="colm colm12">
+
+                            <div class="spacer-b30">
+                                <div class="tagline"><span>Under 16 Kids Singles</span>
+                                </div>
+                                <!-- .tagline -->
+                            </div>
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="firstPlayer" id="u16_firstPlayer" class="gui-input" placeholder="Enter Player Full Name">
+                                    </label>
+                                    <label for="firstPlayer" class="button"> Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="secondPlayer" class="gui-input" placeholder="(Optional)Enter Player Full Name">
+                                    </label>
+                                    <label for="secondPlayer" class="button"> Player</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                            <!-- end section -->
+
+                        </div>
+                        <!-- end .colm6 section -->
+
+                    </div>
+                    <!-- end .frm-row section -->
+
+                    <div class="spacer-t20 spacer-b40 showAfterParticipantSelection">
+                        <div class="tagline"><span> Feedback & Suggestions </span>
+                        </div>
+                        <!-- .tagline -->
+                    </div>
+                    <!-- end .spacer section -->
+
+
+
+                    <div class="section showAfterParticipantSelection">
+                        <label class="field prepend-icon">
+                            <textarea class="gui-textarea" id="comment" name="comment" placeholder="Text area"></textarea>
+                            <span class="field-icon"><i class="fa fa-comments"></i></span>
+                            <span class="input-hint"> 
+                            	<strong>Hint:</strong> Feedback , Suggestions 
+                            </span>
+                        </label>
+                    </div>
+                    <!-- end section -->
+
+                    <div class="frm-row showAfterParticipantSelection">
+
+                        <div class="colm colm12">
+
+                            <div class="spacer-b30">
+                                <div class="tagline"><span>Payment Details</span>
+                                </div>
+                                <!-- .tagline -->
+                            </div>
+                            <div class="notification alert-info spacer-t10">
+                                <p>Pay Amount ($) : <span id="amount"> </span>
+                                </p>                                
+                            </div>
+                            <div>
+                                <p>Pay the above amount to the following Bank Account and note down the reference number below. Account Name : BRISBANE SEVENS , A/C No : 206537 , BSB : 034439.</p>
+
+                            </div>
+                            <!-- end .notification section -->
+                            <!-- end section -->
+                            <div class="section">
+                                <div class="smart-widget sm-left sml-120">
+                                    <label class="field">
+                                        <input type="text" name="payment" id="reference" class="gui-input" placeholder="Payment Reference">
+                                    </label>
+                                    <label for="payment" class="button">Reference</label>
+                                </div>
+                                <!-- end .smart-widget section -->
+                            </div>
+                        </div>
+                        <!-- end .colm6 section -->
+                    </div>
+
+
+
+                    <div class="spacer-t20 spacer-b40 showAfterParticipantSelection">
+                        <div class="tagline"><span> Google Map </span>
+                        </div>
+                        <!-- .tagline -->
+                    </div>
+                    <!-- end .spacer section -->
+
+                    <div class="section showAfterParticipantSelection">
+                       <div class="google-maps">
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.4606916225957!2d153.19225431572093!3d-27.548209382858122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915d7a47cde97f%3A0x95d3ab1f90c25e01!2sRedlands+PCYC!5e0!3m2!1sen!2sau!4v1489826158692" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+                        <!-- end .map-container -->
+                    </div>
+                    <!-- end .section -->
+
+
+                </div>
+                <!-- end .form-body section -->
+                <div class="form-footer">
+                    <button type="submit" class="button btn-primary active" id="submit-form">Proceed to confirm </button>
+                </div>
+				 <div class="progress-bar progress-animated bar-primary" id="progress">
+                            <div class="bar"></div>
+                            <div class="percent"></div>
+                        </div> <!-- end .progress-bar -->       
+				  <div class="notification alert-success spacer-t10" id="success">
+                            <p>Registration Successful</p>
+                            <a href="#" class="close-btn">&times;</a>                                  
+                        </div><!-- end .notification section -->
+                <!-- end .form-footer section -->
+            </form>
+			
+			<div class="copyright">
+                    <p><a href="https://stackoverflow.com/users/4269156/hybrid" target="_blank"> developed by hybr!dTechie</a> </p>
+                </div>
+
+        </div>
+        <!-- end .smart-forms section -->
+    </div>
+    <!-- end .smart-wrap section -->
+</body>
+
+<script>
+
+		var g1Row = $("#g1doublesRow");
+        var g2Row = $("#g2doublesRow");
+        var singlesRow = $("#singlesRow");
+        var under12kidsRow = $("#under12kidsRow");
+        var under16kidsRow = $("#under16kidsRow");
+
+
+		function completeAndRedirect() {           
+            var f = document.getElementsByTagName('form')[0];
+            if (f.checkValidity()) {
+                console.log("valid");
+            } else {
+                console.log("invalid");
+            }
+			
+			if($("#success").hasClass("active")){
+				alert(" Already Registered ");			
+			}else{
+			$("#progress").show();
+
+            var response = {
+                time: new Date($.now()),
+                name: $("#name").val(),
+                email: $("#email").val(),
+                phone: $("#mobile").val(),
+                g1_firstplayer: g1Row.find('input').first().val(),
+                g1_secondplayer: g1Row.find('input').eq(1).val(),
+                g2_firstplayer: g2Row.find('input').first().val(),
+                g2_secondplayer: g2Row.find('input').eq(1).val(),
+                singles_first: singlesRow.find('input').first().val(),
+                singles_second: singlesRow.find('input').eq(1).val(),
+                under12_first: under12kidsRow.find('input').first().val(),
+                under12_second: under12kidsRow.find('input').eq(1).val(),
+                under16_first: under16kidsRow.find('input').first().val(),
+                under16_second: under16kidsRow.find('input').eq(1).val(),
+                feedback: $("#comment").val(),
+                amount: $("#amount").text(),
+                reference: $("#reference").val()
+            }
+            console.log(response);
+            url = 'https://script.google.com/macros/s/AKfycbz0QAkw3g6ubsTu9UctPNTvE1_RtX3tF4a4h0RpFOSkvG2Z-gE/exec'
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: response,
+                success: function() {
+                    console.log("success");
+					$("#success").show();
+					$("#success").addClass("active");
+					alert(" Registration Successful ");		
+					$("#progress").hide();
+                },error: function (xhr, ajaxOptions, thrownError) {
+					alert("Registration Failed. Call Nithin :0450366355");
+					$("#progress").hide();
+
+				}	
+            });
+			}
+
+        };
+
+
+    $(function() {
+
+        var amount = parseInt(0);
+        calculateAmount();
+        var details = $(".showAfterParticipantSelection");
+        details.hide();
+
+        g1Row.hide();
+        g2Row.hide();
+        singlesRow.hide();
+        under12kidsRow.hide();
+        under16kidsRow.hide();
+		$("#success").hide();
+		$("#success").removeClass("active");
+		$("#progress").hide();
+
+
+        $('#cb_g1doubles').change(function() {
+            if (this.checked) {
+                g1Row.show();
+                g1Row.find('input').prop('required', true);
+                details.show();
+            } else {
+                g1Row.hide();
+                g1Row.find('input').prop('required', false);
+            }
+            calculateAmount();
+        });
+        $('#cb_g2doubles').change(function() {
+            if (this.checked) {
+                g2Row.show();
+                details.show();
+                g2Row.find('input').prop('required', true);
+            } else {
+                g2Row.hide();
+                g2Row.find('input').prop('required', false);
+            }
+            calculateAmount();
+        });
+        $('#cb_singles').change(function() {
+            if (this.checked) {
+                singlesRow.show();
+                details.show();
+                $("#singles_firstPlayer").prop('required', true);
+            } else {
+                singlesRow.hide();
+                $("#singles_firstPlayer").prop('required', false);
+            }
+            calculateAmount();
+        });
+        $('#cb_under12kids').change(function() {
+            if (this.checked) {
+                under12kidsRow.show();
+                details.show();
+                $("#u12_firstPlayer").prop('required', true);
+            } else {
+                under12kidsRow.hide();
+                $("#u12_firstPlayer").prop('required', false);
+            }
+            calculateAmount();
+        });
+        $('#cb_under16kids').change(function() {
+            if (this.checked) {
+                under16kidsRow.show();
+                details.show();
+                $("#u16_firstPlayer").prop('required', true);
+            } else {
+                under16kidsRow.hide();
+                $("#u16_firstPlayer").prop('required', false);
+            }
+            calculateAmount();
+        });
+
+
+        $('#under16kidsRow [name="secondPlayer"]').keyup(function() {
+            calculateAmount();
+        })
+
+        $('#under12kidsRow [name="secondPlayer"]').keyup(function() {
+            calculateAmount();
+        })
+
+        $('#singlesRow [name="secondPlayer"]').keyup(function() {
+            calculateAmount();
+        })
+
+        function calculateAmount() {
+            amount = 0;
+            if ($('#cb_g1doubles').is(':checked')) {
+                amount = parseInt(amount) + 60;
+            }
+            if ($('#cb_g2doubles').is(':checked')) {
+                amount = parseInt(amount) + 60;
+            }
+            if ($('#cb_singles').is(':checked')) {
+                amount = parseInt(amount) + 30;
+                if ($('#singlesRow [name="secondPlayer"]').val() != "") {
+                    amount = parseInt(amount) + 30;
+                }
+            }
+            if ($('#cb_under12kids').is(':checked')) {
+                amount = parseInt(amount) + 10;
+                if ($('#under12kidsRow [name="secondPlayer"]').val() != "") {
+                    amount = parseInt(amount) + 10;
+                }
+            }
+            if ($('#cb_under16kids').is(':checked')) {
+                amount = parseInt(amount) + 20;
+                if ($('#under16kidsRow [name="secondPlayer"]').val() != "") {
+                    amount = parseInt(amount) + 20;
+                }
+            }
+            $("#amount").text(amount);
+            if (amount > 0) {
+                $("#reference").prop('required', true);
+            } else {
+                $("#reference").prop('required', false);
+            }
+        }       
+
+            });
+</script>
+
+</html>
